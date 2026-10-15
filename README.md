@@ -1,4 +1,4 @@
-# DSA4213 Assignment 1 — Language models, embeddings and representations
+# DSA4213 Assignment 1: Language models, embeddings and representations
 
 All three parts use one corpus (PubMed 20k RCT), one vocabulary and one test protocol, so their results can be
 compared directly.
