@@ -1,0 +1,21 @@
+# environment
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# course handout (instructor's material, not ours to redistribute)
+Assignment1_2026*.pdf
+
+# data caches (re-created by the scripts; PubMed RCT is downloaded, not redistributed).
+# The abstract-id lists are kept: they are ids only and pin the exact subsets used.
+part_1/cache/*
+!part_1/cache/lm_abstract_ids.json
+part_3/cache/*
+!part_3/cache/cls_abstract_ids.json
+
+# large generated artifacts (re-created by the run_part*.sh scripts)
+part_1/checkpoints/
+part_2/emb/*.gz
+part_2/emb/*.npy
+part_3/feats/

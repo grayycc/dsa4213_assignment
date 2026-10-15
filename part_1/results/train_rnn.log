@@ -1,0 +1,12 @@
+[rnn] device=mps params=8,021,540 trainable=8,021,540
+[rnn] epoch  1 train 6.296 (ppl   542.2) | val 4.973 (ppl   144.5) |  87.8s *
+[rnn] epoch  2 train 5.101 (ppl   164.2) | val 4.650 (ppl   104.6) |  85.6s *
+[rnn] epoch  3 train 4.858 (ppl   128.8) | val 4.493 (ppl    89.4) |  83.6s *
+[rnn] epoch  4 train 4.714 (ppl   111.4) | val 4.410 (ppl    82.3) |  84.0s *
+[rnn] epoch  5 train 4.616 (ppl   101.1) | val 4.356 (ppl    78.0) |  84.6s *
+[rnn] epoch  6 train 4.546 (ppl    94.3) | val 4.320 (ppl    75.2) |  81.1s *
+[rnn] epoch  7 train 4.496 (ppl    89.7) | val 4.290 (ppl    72.9) |  79.8s *
+[rnn] epoch  8 train 4.462 (ppl    86.7) | val 4.274 (ppl    71.8) |  81.6s *
+[rnn] epoch  9 train 4.442 (ppl    84.9) | val 4.263 (ppl    71.0) |  85.0s *
+[rnn] epoch 10 train 4.432 (ppl    84.1) | val 4.261 (ppl    70.9) |  80.4s *
+[rnn] done: best val ppl 70.9 at epoch 10, train time 13.9 min

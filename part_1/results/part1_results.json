@@ -1,0 +1,161 @@
+{
+ "trigram_kn": {
+  "test_nll": 4.260969152507892,
+  "test_ppl": 70.87864239244209,
+  "val_ppl": 69.95858721023534,
+  "discounts": [
+   0.1,
+   0.8,
+   0.9
+  ],
+  "params": 1853608,
+  "param_note": "stored n-gram statistics, not trainable weights",
+  "train_time_s": 12.34369983302895,
+  "fit_time_s": 0.11429008294362575,
+  "tune_time_s": 12.229409750085324,
+  "infer_device": "cpu",
+  "infer_time_s": 0.03784725000150502,
+  "infer_tok_per_s": 6898916.037218478,
+  "cpu_tok_per_s": 3800384.833703361,
+  "gen_ms_per_token": 1.719229164882563,
+  "gen_greedy": {
+   "distinct_1": 0.31500000000000006,
+   "distinct_2": 0.3538461538461538,
+   "repeat_3": 0.6368421052631579
+  },
+  "gen_sample": {
+   "distinct_1": 0.7466666666666666,
+   "distinct_2": 0.9521367521367522,
+   "repeat_3": 0.005263157894736844
+  },
+  "gen_sample_unk_rate": 0.03666666666666667
+ },
+ "rnn": {
+  "test_nll": 4.270618151769212,
+  "test_ppl": 71.56586051225389,
+  "val_ppl": 70.89202396601148,
+  "best_epoch": 10,
+  "epochs": 10,
+  "params": 8021540,
+  "train_time_s": 833.4144779571798,
+  "train_s_per_epoch": 83.34144779571798,
+  "infer_device": "mps",
+  "infer_time_s": 42.71278279100079,
+  "infer_tok_per_s": 6113.041177336087,
+  "cpu_tok_per_s": 31440.534549465105,
+  "gen_ms_per_token": 1.8210475001251325,
+  "config": {
+   "emb_dim": 100,
+   "hidden": 256,
+   "layers": 2,
+   "dropout": 0.3
+  },
+  "final_train_loss": 4.431774942449821,
+  "final_val_loss": 4.261157930256531,
+  "gen_greedy": {
+   "distinct_1": 0.4600000000000001,
+   "distinct_2": 0.6666666666666666,
+   "repeat_3": 0.2578947368421053
+  },
+  "gen_sample": {
+   "distinct_1": 0.7466666666666666,
+   "distinct_2": 0.947008547008547,
+   "repeat_3": 0.019298245614035096
+  },
+  "gen_sample_unk_rate": 0.013333333333333334
+ },
+ "lstm": {
+  "test_nll": 4.325891666876581,
+  "test_ppl": 75.63292217341531,
+  "val_ppl": 74.93930744647565,
+  "best_epoch": 10,
+  "epochs": 10,
+  "params": 8691236,
+  "train_time_s": 715.1676987090614,
+  "train_s_per_epoch": 71.51676987090613,
+  "infer_device": "mps",
+  "infer_time_s": 9.638079875032417,
+  "infer_tok_per_s": 27090.976977312275,
+  "cpu_tok_per_s": 21541.473760824843,
+  "gen_ms_per_token": 1.06507895514369,
+  "config": {
+   "emb_dim": 100,
+   "hidden": 256,
+   "layers": 2,
+   "dropout": 0.3
+  },
+  "final_train_loss": 4.509527388469193,
+  "final_val_loss": 4.316678551882696,
+  "gen_greedy": {
+   "distinct_1": 0.43499999999999994,
+   "distinct_2": 0.635897435897436,
+   "repeat_3": 0.28421052631578947
+  },
+  "gen_sample": {
+   "distinct_1": 0.69,
+   "distinct_2": 0.9470085470085471,
+   "repeat_3": 0.014035087719298244
+  },
+  "gen_sample_unk_rate": 0.023333333333333334
+ },
+ "transformer": {
+  "test_nll": 3.813093671120993,
+  "test_ppl": 45.29033576105409,
+  "val_ppl": 44.710607088864286,
+  "best_epoch": 10,
+  "epochs": 10,
+  "params": 11016484,
+  "train_time_s": 1353.9911272088066,
+  "train_s_per_epoch": 135.39911272088065,
+  "infer_device": "mps",
+  "infer_time_s": 6.28789749997668,
+  "infer_tok_per_s": 41525.008955850244,
+  "cpu_tok_per_s": 14140.925940241352,
+  "gen_ms_per_token": 9.178852079785429,
+  "config": {
+   "emb_dim": 100,
+   "d_model": 256,
+   "layers": 4,
+   "heads": 4,
+   "ff": 1024,
+   "dropout": 0.2,
+   "context": 128
+  },
+  "final_train_loss": 3.526068468426549,
+  "final_val_loss": 3.8002107685223976,
+  "gen_greedy": {
+   "distinct_1": 0.515,
+   "distinct_2": 0.6666666666666666,
+   "repeat_3": 0.268421052631579
+  },
+  "gen_sample": {
+   "distinct_1": 0.7166666666666667,
+   "distinct_2": 0.9094017094017096,
+   "repeat_3": 0.04035087719298246
+  },
+  "gen_sample_unk_rate": 0.005
+ },
+ "_setup": {
+  "test_targets": 261105,
+  "device": "mps",
+  "prompts": [
+   "this study aimed to evaluate the",
+   "patients were randomly assigned to",
+   "the primary outcome was",
+   "there was no significant difference in",
+   "these findings suggest that"
+  ],
+  "gen_len": 40,
+  "sampling": {
+   "temperature": 0.8,
+   "top_k": 40
+  },
+  "sample_seeds": [
+   0,
+   1,
+   2
+  ],
+  "timing": "median of 3 runs after 1 warm-up; GPU synchronised",
+  "torch": "2.14.1"
+ }
+}

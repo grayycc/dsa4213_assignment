@@ -1,0 +1,12 @@
+[lstm_glove_ft] device=mps params=8,691,236 trainable=8,691,236
+[lstm_glove_ft] epoch  1 train 6.606 (ppl   739.4) | val 5.302 (ppl   200.7) |  72.9s *
+[lstm_glove_ft] epoch  2 train 5.284 (ppl   197.2) | val 4.828 (ppl   124.9) |  73.4s *
+[lstm_glove_ft] epoch  3 train 4.957 (ppl   142.1) | val 4.601 (ppl    99.6) |  72.3s *
+[lstm_glove_ft] epoch  4 train 4.764 (ppl   117.2) | val 4.454 (ppl    86.0) |  69.2s *
+[lstm_glove_ft] epoch  5 train 4.635 (ppl   103.1) | val 4.365 (ppl    78.6) |  69.1s *
+[lstm_glove_ft] epoch  6 train 4.548 (ppl    94.5) | val 4.304 (ppl    74.0) |  69.1s *
+[lstm_glove_ft] epoch  7 train 4.489 (ppl    89.0) | val 4.268 (ppl    71.4) |  69.1s *
+[lstm_glove_ft] epoch  8 train 4.452 (ppl    85.8) | val 4.248 (ppl    70.0) |  69.1s *
+[lstm_glove_ft] epoch  9 train 4.431 (ppl    84.0) | val 4.240 (ppl    69.4) |  69.3s *
+[lstm_glove_ft] epoch 10 train 4.422 (ppl    83.3) | val 4.239 (ppl    69.3) |  69.0s *
+[lstm_glove_ft] done: best val ppl 69.3 at epoch 10, train time 11.7 min

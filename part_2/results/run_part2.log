@@ -1,0 +1,71 @@
+Exception ignored in: 'gensim.models.word2vec_inner.our_dot_float'
+Exception ignored in: 'gensim.models.word2vec_inner.our_dot_float'
+Exception ignored in: 'gensim.models.word2vec_inner.our_dot_float'
+Exception ignored in: 'gensim.models.word2vec_inner.our_dot_float'
+Exception ignored in: 'gensim.models.word2vec_inner.our_dot_float'
+Exception ignored in: 'gensim.models.word2vec_inner.our_dot_float'
+76,312 training sentences, 2,112,630 tokens
+skip-gram: build_vocab 0.2s, train 32.1s (10 epochs, 1 worker)
+saved /Users/grace/dsa4213_assignment1/part_2/emb/w2v100.npy  shape=(21844, 100)  mean row norm 2.35
+GloVe (glove-wiki-gigaword-100.gz, 400,000 words) -> LM vocab 21,844
+     exact: 15,323 types (70.16%)  | tokens: train 91.31%, test 90.46%
+     digit:     40 types ( 0.18%)  | tokens: train  0.67%, test  0.65%
+     alias:    289 types ( 1.32%)  | tokens: train  0.58%, test  0.55%
+  compound:  2,879 types (13.18%)  | tokens: train  1.20%, test  0.83%
+    random:  3,310 types (15.15%)  | tokens: train  1.33%, test  0.75%
+  random examples: ['hba@c', 'iqr', 'randomisation', 'bupivacaine', 'hrqol', 'multicentre', 'remifentanil', 'fev@', 'dexmedetomidine', 'noninferiority', 'ranibizumab', 'ropivacaine']
+saved /Users/grace/dsa4213_assignment1/part_2/emb/glove100.npy  mean row norm 4.73
+[lstm_w2v] device=mps params=8,691,236 trainable=6,506,836
+[lstm_w2v] epoch  1 train 6.719 (ppl   828.4) | val 5.564 (ppl   260.9) |  80.2s *
+[lstm_w2v] epoch  2 train 5.538 (ppl   254.2) | val 5.006 (ppl   149.2) |  71.4s *
+[lstm_w2v] epoch  3 train 5.153 (ppl   172.9) | val 4.724 (ppl   112.7) |  72.1s *
+[lstm_w2v] epoch  4 train 4.937 (ppl   139.4) | val 4.564 (ppl    95.9) |  68.8s *
+[lstm_w2v] epoch  5 train 4.792 (ppl   120.6) | val 4.449 (ppl    85.5) |  70.7s *
+[lstm_w2v] epoch  6 train 4.688 (ppl   108.7) | val 4.372 (ppl    79.2) |  70.1s *
+[lstm_w2v] epoch  7 train 4.618 (ppl   101.3) | val 4.324 (ppl    75.5) |  69.5s *
+[lstm_w2v] epoch  8 train 4.574 (ppl    96.9) | val 4.298 (ppl    73.5) |  69.0s *
+[lstm_w2v] epoch  9 train 4.550 (ppl    94.6) | val 4.289 (ppl    72.9) |  68.0s *
+[lstm_w2v] epoch 10 train 4.541 (ppl    93.8) | val 4.286 (ppl    72.7) |  68.3s *
+[lstm_w2v] done: best val ppl 72.7 at epoch 10, train time 11.8 min
+[lstm_glove] device=mps params=8,691,236 trainable=6,506,836
+[lstm_glove] epoch  1 train 6.671 (ppl   788.9) | val 5.478 (ppl   239.4) |  68.9s *
+[lstm_glove] epoch  2 train 5.481 (ppl   240.1) | val 4.991 (ppl   147.1) |  66.5s *
+[lstm_glove] epoch  3 train 5.153 (ppl   172.9) | val 4.761 (ppl   116.9) |  66.6s *
+[lstm_glove] epoch  4 train 4.969 (ppl   143.8) | val 4.616 (ppl   101.1) |  66.6s *
+[lstm_glove] epoch  5 train 4.846 (ppl   127.2) | val 4.523 (ppl    92.1) |  66.6s *
+[lstm_glove] epoch  6 train 4.762 (ppl   117.0) | val 4.464 (ppl    86.8) |  66.6s *
+[lstm_glove] epoch  7 train 4.706 (ppl   110.6) | val 4.425 (ppl    83.6) |  66.5s *
+[lstm_glove] epoch  8 train 4.670 (ppl   106.7) | val 4.406 (ppl    81.9) |  66.5s *
+[lstm_glove] epoch  9 train 4.650 (ppl   104.6) | val 4.398 (ppl    81.3) |  66.7s *
+[lstm_glove] epoch 10 train 4.641 (ppl   103.7) | val 4.396 (ppl    81.1) |  66.5s *
+[lstm_glove] done: best val ppl 81.1 at epoch 10, train time 11.1 min
+evaluating: ['lstm', 'lstm_w2v', 'lstm_glove']
+            lstm: test ppl 75.6
+        lstm_w2v: test ppl 73.1
+      lstm_glove: test ppl 81.8
+| Setting | Trainable params | Test PPL | Best val PPL (epoch) | Val PPL ep.1 | Epochs to ≤5% of best | LM train time (min) | Grad-norm median / p95 | Clipped steps | Final val−train gap | distinct-2 (sample) | repeat-3 (greedy) |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| A: random, trainable | 8.69M / 8.69M | 75.6 | 74.9 (10) | 206.7 | 7 | 11.9 | 0.21 / 0.27 | 1% | -0.193 | 0.95 | 0.28 |
+| B: own skip-gram, frozen | 6.51M / 8.69M | 73.1 | 72.7 (10) | 260.9 | 7 | 11.8 | 0.23 / 0.30 | 1% | -0.255 | 0.88 | 0.44 |
+| C: GloVe, frozen | 6.51M / 8.69M | 81.8 | 81.1 (10) | 239.4 | 7 | 11.1 | 0.23 / 0.29 | 1% | -0.245 | 0.93 | 0.38 |
+
+Own skip-gram embedding cost (separate from LM training): 32.3 s on arm64 CPU (macOS-26.6.2-arm64-arm-64bit), 1 worker thread(s), 2,112,630 training tokens.
+GloVe: no training on our side; pre-trained by its authors on ~6B tokens (about 2,800x our 2.1M-token LM training split).
+saved /Users/grace/dsa4213_assignment1/part_2/figures/part2_curves.png
+evaluating: ['lstm', 'lstm_w2v', 'lstm_glove', 'lstm_randfrozen', 'lstm_glove_ft']
+            lstm: test ppl 75.6
+        lstm_w2v: test ppl 73.1
+      lstm_glove: test ppl 81.8
+ lstm_randfrozen: test ppl 89.4
+   lstm_glove_ft: test ppl 69.9
+| Setting | Trainable params | Test PPL | Best val PPL (epoch) | Val PPL ep.1 | Epochs to ≤5% of best | LM train time (min) | Grad-norm median / p95 | Clipped steps | Final val−train gap | distinct-2 (sample) | repeat-3 (greedy) |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| A: random, trainable | 8.69M / 8.69M | 75.6 | 74.9 (10) | 206.7 | 7 | 11.9 | 0.21 / 0.27 | 1% | -0.193 | 0.95 | 0.28 |
+| B: own skip-gram, frozen | 6.51M / 8.69M | 73.1 | 72.7 (10) | 260.9 | 7 | 11.8 | 0.23 / 0.30 | 1% | -0.255 | 0.88 | 0.44 |
+| C: GloVe, frozen | 6.51M / 8.69M | 81.8 | 81.1 (10) | 239.4 | 7 | 11.1 | 0.23 / 0.29 | 1% | -0.245 | 0.93 | 0.38 |
+| random, frozen (control) | 6.51M / 8.69M | 89.4 | 88.6 (10) | 232.6 | 7 | 11.4 | 0.22 / 0.28 | 1% | -0.234 | 0.92 | 0.47 |
+| GloVe, trainable (control) | 8.69M / 8.69M | 69.9 | 69.3 (10) | 200.7 | 7 | 11.7 | 0.22 / 0.29 | 1% | -0.184 | 0.90 | 0.22 |
+
+Own skip-gram embedding cost (separate from LM training): 32.3 s on arm64 CPU (macOS-26.6.2-arm64-arm-64bit), 1 worker thread(s), 2,112,630 training tokens.
+GloVe: no training on our side; pre-trained by its authors on ~6B tokens (about 2,800x our 2.1M-token LM training split).
+saved /Users/grace/dsa4213_assignment1/part_2/figures/part2_curves.png

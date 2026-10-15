@@ -1,0 +1,12 @@
+[lstm_w2v] device=mps params=8,691,236 trainable=6,506,836
+[lstm_w2v] epoch  1 train 6.719 (ppl   828.4) | val 5.564 (ppl   260.9) |  80.2s *
+[lstm_w2v] epoch  2 train 5.538 (ppl   254.2) | val 5.006 (ppl   149.2) |  71.4s *
+[lstm_w2v] epoch  3 train 5.153 (ppl   172.9) | val 4.724 (ppl   112.7) |  72.1s *
+[lstm_w2v] epoch  4 train 4.937 (ppl   139.4) | val 4.564 (ppl    95.9) |  68.8s *
+[lstm_w2v] epoch  5 train 4.792 (ppl   120.6) | val 4.449 (ppl    85.5) |  70.7s *
+[lstm_w2v] epoch  6 train 4.688 (ppl   108.7) | val 4.372 (ppl    79.2) |  70.1s *
+[lstm_w2v] epoch  7 train 4.618 (ppl   101.3) | val 4.324 (ppl    75.5) |  69.5s *
+[lstm_w2v] epoch  8 train 4.574 (ppl    96.9) | val 4.298 (ppl    73.5) |  69.0s *
+[lstm_w2v] epoch  9 train 4.550 (ppl    94.6) | val 4.289 (ppl    72.9) |  68.0s *
+[lstm_w2v] epoch 10 train 4.541 (ppl    93.8) | val 4.286 (ppl    72.7) |  68.3s *
+[lstm_w2v] done: best val ppl 72.7 at epoch 10, train time 11.8 min

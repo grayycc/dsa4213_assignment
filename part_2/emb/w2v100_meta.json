@@ -1,0 +1,29 @@
+{
+ "method": "word2vec skip-gram with negative sampling (gensim)",
+ "gensim_version": "4.4.0",
+ "hyperparameters": {
+  "dim": 100,
+  "window": 5,
+  "negative": 5,
+  "sample": 0.001,
+  "epochs": 10,
+  "seed": 42,
+  "workers": 1,
+  "out": "/Users/grace/dsa4213_assignment1/part_2/emb/w2v100.npy",
+  "min_count": 1,
+  "sg": 1
+ },
+ "corpus": "LM training split only",
+ "train_sentences": 76312,
+ "train_tokens": 2112630,
+ "vocab_size": 21844,
+ "coverage_types": "21843/21844 (all except <pad>, which is set to zero)",
+ "build_vocab_time_s": 0.19076874991878867,
+ "train_time_s": 32.07129883405287,
+ "total_time_s": 32.26206758397166,
+ "hardware": "arm64 CPU (macOS-26.6.2-arm64-arm-64bit), 1 worker thread(s)",
+ "pythonhashseed": "0",
+ "row_norm_mean": 2.346698760986328,
+ "row_norm_std": 0.7690635323524475,
+ "value_std": 0.24694585800170898
+}

@@ -1,0 +1,12 @@
+[transformer] device=mps params=11,016,484 trainable=11,016,484
+[transformer] epoch  1 train 6.070 (ppl   432.8) | val 4.796 (ppl   121.1) | 139.6s *
+[transformer] epoch  2 train 4.771 (ppl   118.1) | val 4.354 (ppl    77.8) | 148.9s *
+[transformer] epoch  3 train 4.370 (ppl    79.0) | val 4.140 (ppl    62.8) | 145.3s *
+[transformer] epoch  4 train 4.103 (ppl    60.5) | val 4.017 (ppl    55.5) | 136.9s *
+[transformer] epoch  5 train 3.909 (ppl    49.8) | val 3.950 (ppl    51.9) | 209.4s *
+[transformer] epoch  6 train 3.761 (ppl    43.0) | val 3.886 (ppl    48.7) | 145.7s *
+[transformer] epoch  7 train 3.650 (ppl    38.5) | val 3.842 (ppl    46.6) | 124.2s *
+[transformer] epoch  8 train 3.575 (ppl    35.7) | val 3.822 (ppl    45.7) | 100.2s *
+[transformer] epoch  9 train 3.540 (ppl    34.5) | val 3.805 (ppl    44.9) | 101.8s *
+[transformer] epoch 10 train 3.526 (ppl    34.0) | val 3.800 (ppl    44.7) | 102.0s *
+[transformer] done: best val ppl 44.7 at epoch 10, train time 22.6 min

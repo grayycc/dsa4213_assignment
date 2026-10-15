@@ -1,0 +1,12 @@
+[lstm_randfrozen] device=mps params=8,691,236 trainable=6,506,836
+[lstm_randfrozen] epoch  1 train 6.652 (ppl   774.4) | val 5.449 (ppl   232.6) |  66.5s *
+[lstm_randfrozen] epoch  2 train 5.453 (ppl   233.4) | val 4.991 (ppl   147.1) |  66.5s *
+[lstm_randfrozen] epoch  3 train 5.167 (ppl   175.4) | val 4.793 (ppl   120.7) |  66.7s *
+[lstm_randfrozen] epoch  4 train 5.005 (ppl   149.2) | val 4.674 (ppl   107.1) |  66.6s *
+[lstm_randfrozen] epoch  5 train 4.896 (ppl   133.8) | val 4.592 (ppl    98.7) |  66.6s *
+[lstm_randfrozen] epoch  6 train 4.821 (ppl   124.1) | val 4.540 (ppl    93.7) |  67.6s *
+[lstm_randfrozen] epoch  7 train 4.774 (ppl   118.4) | val 4.508 (ppl    90.7) |  69.1s *
+[lstm_randfrozen] epoch  8 train 4.742 (ppl   114.7) | val 4.492 (ppl    89.3) |  70.2s *
+[lstm_randfrozen] epoch  9 train 4.724 (ppl   112.6) | val 4.485 (ppl    88.7) |  71.7s *
+[lstm_randfrozen] epoch 10 train 4.717 (ppl   111.9) | val 4.484 (ppl    88.6) |  72.5s *
+[lstm_randfrozen] done: best val ppl 88.6 at epoch 10, train time 11.4 min
